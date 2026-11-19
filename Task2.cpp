@@ -6,8 +6,8 @@ void sellTicket(int& seats) {
         seats = seats - 1;
     }
 }
-
 int main() {
+    setlocale(LC_ALL, "Russian");
     int s1 = 3;
     cout << "До: " << s1 << endl;
     sellTicket(s1);
