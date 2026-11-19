@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 
@@ -9,18 +8,14 @@ void sellTicket(int& seats) {
 }
 
 int main() {
-    setlocale(LC_ALL, "Russian");
+    int s1 = 3;
+    cout << "До: " << s1 << endl;
+    sellTicket(s1);
+    cout << "После: " << s1 << endl;
 
-    int freeSeats;
-
-    cout << "Введите количество свободных мест: ";
-    cin >> freeSeats;
-
-    cout << "До: " << freeSeats << endl;
-
-    sellTicket(freeSeats);
-
-    cout << "После: " << freeSeats << endl;
-
+    int s2 = 0;
+    cout << "До: " << s2 << endl;
+    sellTicket(s2);
+    cout << "После: " << s2 << endl;
     return 0;
 }
